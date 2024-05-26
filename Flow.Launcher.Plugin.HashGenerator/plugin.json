@@ -1,0 +1,12 @@
+{
+    "ID": "9157F97E1D194928BD01729CA644702E",
+    "ActionKeyword": "hash",
+    "Name": "HashGenerator",
+    "Description": "a hash generator plugin for Flow",
+    "Author": "yu-xiaoyao",
+    "Version": "1.0.0",
+    "Language": "csharp",
+    "Website": "https://github.com/yu-xiaoyao/Flow.Launcher.Plugin.HashGenerator",
+    "IcoPath": "Images/hash-generator.png",
+    "ExecuteFileName": "Flow.Launcher.Plugin.HashGenerator.dll"
+}
