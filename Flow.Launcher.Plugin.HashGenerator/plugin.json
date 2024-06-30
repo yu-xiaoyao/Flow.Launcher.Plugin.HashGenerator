@@ -7,6 +7,6 @@
     "Version": "1.0.0",
     "Language": "csharp",
     "Website": "https://github.com/yu-xiaoyao/Flow.Launcher.Plugin.HashGenerator",
-    "IcoPath": "Images/hash-generator.png",
+    "IcoPath": "Images\\HashGenerator.png",
     "ExecuteFileName": "Flow.Launcher.Plugin.HashGenerator.dll"
 }

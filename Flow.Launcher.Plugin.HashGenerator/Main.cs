@@ -7,7 +7,7 @@ namespace Flow.Launcher.Plugin.HashGenerator
 {
     public class HashGenerator : IPlugin
     {
-        public readonly string IconPath = "Images\\hash-generator.png";
+        public readonly string IconPath = "Images\\HashGenerator.png";
 
         private PluginInitContext _context;
 
