@@ -14,45 +14,40 @@ public class HashHelper
     }
 
 
-    public static string CalcMd5_32(byte[] content, HashResultFormat format = HashResultFormat.Hex)
+    public static byte[] CalcMd5_32(byte[] content)
     {
         var hash = MD5.HashData(content);
-        Console.WriteLine($"{hash.Length}");
-        return ToHashString(hash, format);
+        return hash;
     }
 
-    public static string CalcMd5_16(byte[] content, HashResultFormat format = HashResultFormat.Hex)
+    public static byte[] CalcMd5_16(byte[] content)
     {
         var hash = MD5.HashData(content);
         hash = hash.Skip(4).Take(8).ToArray();
-        return ToHashString(hash, format);
+        return hash;
     }
 
-    public static string CalcSha1(byte[] content, HashResultFormat format = HashResultFormat.Hex)
+    public static byte[] CalcSha1(byte[] content)
     {
-        var hash = SHA1.HashData(content);
-        return ToHashString(hash, format);
+        return SHA1.HashData(content);
     }
 
-    public static string CalcSha256(byte[] content, HashResultFormat format = HashResultFormat.Hex)
+    public static byte[] CalcSha256(byte[] content)
     {
-        var hash = SHA256.HashData(content);
-        return ToHashString(hash, format);
+        return SHA256.HashData(content);
     }
 
-    public static string CalcSha384(byte[] content, HashResultFormat format = HashResultFormat.Hex)
+    public static byte[] CalcSha384(byte[] content)
     {
-        var hash = SHA384.HashData(content);
-        return ToHashString(hash, format);
+        return SHA384.HashData(content);
     }
 
-    public static string CalcSha512(byte[] content, HashResultFormat format = HashResultFormat.Hex)
+    public static byte[] CalcSha512(byte[] content)
     {
-        var hash = SHA512.HashData(content);
-        return ToHashString(hash, format);
+        return SHA512.HashData(content);
     }
 
-    private static string ToHashString(byte[] hash, HashResultFormat format)
+    public static string ToHashString(byte[] hash, HashResultFormat format)
     {
         return format switch
         {
